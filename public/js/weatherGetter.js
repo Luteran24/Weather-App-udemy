@@ -8,7 +8,7 @@ const messageFour = document.querySelector('#message-4')
 
 async function getWeather(location) {
     try {
-        const response = await fetch(`http://localhost:3000/weather?address=${location}`);
+        const response = await fetch(`/weather?address=${location}`);
         if (response.ok) {
             await response.json().then((data) => {
                 if (data.data) {
@@ -39,4 +39,4 @@ weatherForm.addEventListener('submit', (e) => {
 
     getWeather(search.value)
 
-})  
+})
