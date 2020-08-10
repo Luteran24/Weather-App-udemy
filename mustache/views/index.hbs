@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Weather</title>
+        <link rel="icon" href="/images/cloud.png">
+        <link rel="stylesheet" href= "/css/styles.css">
+    </head>
+
+    <body>
+        <div class="main-content">
+
+            {{>header}}
+
+            <p>
+                Use This Site For Weather Forecast.
+            </p>
+            <form>
+                <input placeholder="Enter Location Here">
+                <button>
+                    Go
+                </button>
+            </form>
+
+            <p id='message-1'></p>
+            <p id='message-2'></p>
+            <p id='message-3'></p>
+            <p id='message-4'></p>
+
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/weatherGetter.js"></script>
+    </body>
+
+</html>
