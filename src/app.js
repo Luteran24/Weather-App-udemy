@@ -5,8 +5,8 @@ const hbs = require('hbs')
 const Request = require('request')
 const DarkSkyUrl = 'https://api.darksky.net/forecast/03db7eeb912980f7c4a3f8a81dcabf32/37.8267,-122.4233?units=uk2'
 const MapBoxUrl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoibHV0ZXJhbiIsImEiOiJjazg3MDRnczAwYWk2M2VwcnM4a2c5a3ZwIn0.tbai7u-BD-uDWYCBnxlkbQ'
-const GeoCode = require('./utils/geocode')
-const DarkSkyReq = require('./utils/darkskyreq')
+const GeoCode = require('./utils/Geocode')
+const DarkSkyReq = require('./utils/DarkSkyReq')
 
 // define paths for express config
 const publicDirPath = path.join(__dirname, '../public')
